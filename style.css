@@ -1,3 +1,23 @@
-html, body {
+body {
     box-sizing: border-box;
+    background: lightblue;
 }
+
+ img {
+   height: 300px;
+   width: 350px;
+ }
+
+ .cloud {
+   position: absolute;
+   top: 150px;
+   right: -500px;
+   opacity: .8;
+    animation: cloud 10s linear 0s infinite reverse;
+   z-index: 99;
+ }
+
+ @keyframes cloud {
+   from {right:-500px;}
+   to {right: 102%;}
+ }

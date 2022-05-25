@@ -25,10 +25,10 @@ function init(){
     });
     
     document.getElementById('bgBtn').addEventListener('click', () => {
-      if(document.body.style.backgroundColor !== "green") {
-        document.body.style.backgroundColor = 'green'
+      if(document.body.style.backgroundColor !== "red") {
+        document.body.style.backgroundColor = 'red'
       }else {
-        document.body.style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "lightblue";
       }
     });
 }
