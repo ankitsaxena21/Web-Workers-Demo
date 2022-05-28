@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init(){
     worker = new Worker('web-work.js');
+    
     worker.onmessage = (ev) => {
         let data = ev.data;
         console.log(typeof data, data);
@@ -18,7 +19,7 @@ function init(){
         console.log(err.message, err.filename);
     }
     
-    document.getElementById('fetchBtn')addEventListener('click', ()=>{
+    document.getElementById('fetchBtn').addEventListener('click', ()=>{
         worker.postMessage({'do':'fetch'});
     })
 
